@@ -1,0 +1,13 @@
+// Declare a variable named kelvin and give it the value 293
+const kelvin = 0;
+
+// Convert Kelvin to Celsius
+const celsius = kelvin - 273;
+
+// Convert Kelvin to Celsius
+let newton = celsius * ( 33/100)
+
+// Round down the Newton temperature
+newton = Math.floor(newton);
+
+console.log(`The temperature is ${newton} degrees  Newton.`)
