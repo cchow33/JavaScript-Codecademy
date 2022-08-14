@@ -1,0 +1,16 @@
+const numbers = [1, 2, 3, 4, 5];
+
+function changeArr(arr){
+  arr[0] = 'CHANGED';
+  arr[4] = 'MUTATED';
+}
+
+changeArr(numbers);
+console.log(numbers);
+
+function removeElement(newArr) {
+  newArr.pop();
+}
+
+removeElement(numbers);
+console.log(numbers);
