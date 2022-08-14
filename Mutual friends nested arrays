@@ -1,0 +1,11 @@
+const myFriends = ["Joe", "Dom", "Ralph", "Luke"];
+const yourFriends = ["Joe", "Dom", "Alma"];
+const mutualFriends = [];
+
+for (let i = 0; i < myFriends.length; i++) {
+  for (let j = 0; j < yourFriends.length; j++) {
+    if (bobsFollowers[i] === yourFriends[j]) {
+      mutualFriends.push(myFriends[i]);
+    }
+  }
+}
