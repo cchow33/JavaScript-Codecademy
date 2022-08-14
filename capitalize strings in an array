@@ -1,0 +1,11 @@
+const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+
+const capitalizeChores = chores.map(item => item[0].toUpperCase() + item.substring(1))
+  console.log(capitalizeChores)
+
+
+let removed = chores.pop();
+let capital = removed[0].toUpperCase() + removed.substring(1);
+
+console.log(`${capital} was removed from chores. Now the following chores remain: ${chores}`);
+
