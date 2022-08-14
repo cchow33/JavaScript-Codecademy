@@ -1,0 +1,20 @@
+// Dog Years to Human Years
+
+// First 2 dog years = 10.5 human years each
+// Each dog year after = 4 human years
+
+// Dog years => Human years
+
+const dogAge = Math.floor(Math.random() * 20);
+
+const earlyYears = 2 * 10.5;
+const laterYears = (dogAge - 2) * 4
+const totalYears = earlyYears + laterYears;
+
+if (totalYears >= 65){
+  console.log(`At ${dogAge}, your dog is a senior citizen. He is ${totalYears} years old in human years.`)
+  } else if (totalYears <= 10){
+    console.log(`At ${dogAge}, your dog is a child. He is ${totalYears} years old in human years.`)
+  } else {
+    console.log(`At ${dogAge}, your dog is the perfect age! He is ${totalYears} years old in human years`)
+  }
