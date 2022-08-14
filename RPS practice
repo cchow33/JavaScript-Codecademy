@@ -1,0 +1,85 @@
+// Get user's choice
+
+  const options1 = Math.floor(Math.random() * 3);
+  //console.log(options1)
+
+  let userChoice = '';
+
+  switch(options1) {
+    case 0:
+      userChoice = 'rock';
+      break;
+    case 1:
+      userChoice = 'paper';
+      break;
+    default:
+      userChoice = 'scissors';
+      break;
+  }
+
+console.log(`You chose ${userChoice}.`);
+
+
+// Step 2: Get computer's choice
+
+function getComputerChoice(){
+  const options2 = Math.floor(Math.random() * 3);
+  //console.log(options2)
+
+  let computerChoice = '';
+
+  switch(options2) {
+    case 0:
+      computerChoice = 'rock';
+      break;
+    case 1:
+      computerChoice = 'paper';
+      break;
+    default:
+      computerChoice = 'scissors';
+      break;
+  }
+
+  
+console.log(`The computer chose ${computerChoice}.`);
+
+}
+
+// Step 3: Declare a winner
+
+function declareWinner(userChoice, computerChoice){
+  if(userChoice === 'rock') {
+    if(computerChoice === 'scissors'){
+      console.log('Congratulations! You win!');
+    } else {
+      console.log('Sorry, you lose!');
+    }
+  }
+
+  if(userChoice === 'paper') {
+    if(computerChoice === 'rock') {
+      return 'Congratulations! You win!';
+      } else {
+      return 'Sorry, you lose!';
+    }
+  }
+
+  if(userChoice === 'scissors') {
+    if(computerChoice === 'paper') {
+      return 'Congratulations! You win!';
+      } else {
+      return 'Sorry, you lose!';
+    }
+  }
+};
+
+// // Step 4: Play game and display results
+
+// function playGame() {
+//   getComputerChoice();
+//   getUserChoice();
+
+// }
+
+
+console.log(`You chose ${userChoice} and the computer chose ${computerChoice}.`)
