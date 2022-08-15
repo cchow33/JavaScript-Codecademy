@@ -1,0 +1,34 @@
+// Whale talk = AEIOU (only vowels);
+// U's and E's are doubled;
+// Translate 'turpentine and turtles' to 'UUEEIEEAUUEE'
+// Loop through all the letters in a word or phrase
+// Replace consonants and 'Y' with spaces
+// Replace U's and E's with UU and EE
+// Remove all spaces by joining the letters
+
+const input = "mermaids and salty sailors";
+const vowels = ["a", "e", "i", "o", "u"];
+const whaleTalk = [];
+
+for (let i = 0; i < input.length; i++) {
+  // console.log("i is " + i);
+  if (input[i] === "e") {
+    whaleTalk.push(input[i]);
+  }
+  if (input[i] === "u") {
+    whaleTalk.push(input[i]);
+  }
+
+  for (let j = 0; j < vowels.length; j++) {
+    // console.log("j is " + j);
+    if (input[i] === vowels[j]) {
+      // console.log(input[i]);
+      whaleTalk.push(input[i]);
+    }
+  }
+}
+
+// console.log(whaleTalk);
+
+const resultString = whaleTalk.join('').toUpperCase();
+console.log(` '${resultString}' `);
