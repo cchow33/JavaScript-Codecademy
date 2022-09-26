@@ -1,0 +1,40 @@
+let storyWords = story.split(" ");
+let unnecessaryWord = "literally";
+let misspelledWord = "beautifull";
+let badWord = "freaking";
+
+// console.log(storyWords);
+
+let count = 0;
+storyWords = storyWords.filter((word) => {
+  return word != unnecessaryWord;
+});
+console.log(storyWords.join(" "));
+
+storyWords.forEach((word) => {
+  return count++;
+});
+
+storyWords = storyWords.map((item) => {
+  return item === misspelledWord ? "beautiful" : item;
+});
+
+const badWordIndex = storyWords.findIndex((word) => {
+  return word === badWord;
+});
+
+console.log(badWordIndex);
+
+badWordIndex[78] = "really";
+
+const lengthCheck = storyWords.every((word) => {
+  return word.length > 10;
+});
+
+// console.log(lengthCheck);
+
+const longWord = storyWords.filter((word) => {
+  return word.length > 10;
+});
+
+console.log(longWord);
